@@ -1,4 +1,4 @@
-resource "aws_acm_certificate" "daws84s" {
+resource "aws_acm_certificate" "bharath2103" {
   domain_name       = "bharath2103.site"   # change to your domain
   validation_method = "DNS"
 
