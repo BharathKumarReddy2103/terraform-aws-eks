@@ -35,7 +35,7 @@ resource "aws_lb_listener" "ingress_alb" {
 
 resource "aws_route53_record" "ingress_alb" {
   zone_id = var.zone_id
-  name    = "${var.environment}.${var.zone_name}" #dev.daws84s.site
+  name    = "${var.environment}.${var.zone_name}" #dev.bharath2103.site
   type    = "A"
 
   alias {
