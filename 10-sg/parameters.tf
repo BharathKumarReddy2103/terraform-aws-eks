@@ -16,7 +16,6 @@ resource "aws_ssm_parameter" "eks_node_sg_id" {
   value = module.eks_node.sg_id
 }
 
-
 resource "aws_ssm_parameter" "bastion_sg_id" {
   name  = "/${var.project}/${var.environment}/bastion_sg_id"
   type  = "String"
