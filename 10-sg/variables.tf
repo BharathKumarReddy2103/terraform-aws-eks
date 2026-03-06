@@ -6,7 +6,6 @@ variable "environment" {
     default = "dev"
 }
 
-
 variable "bastion_sg_name" {
     default = "bastion"
 }
