@@ -64,11 +64,11 @@ module "eks" {
       }
 
      taints = {
-      # upgrade = {
+      upgrade = {
         key = "upgrade"
         value  = "true"
         effect = "NO_SCHEDULE"
-      # }
+      }
      }
     }
   }
