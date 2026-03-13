@@ -64,7 +64,7 @@ pipeline {
                 }
             }
         }
-        Down stream job
+
         stage('Trigger SG') {
             steps {
                 script {
