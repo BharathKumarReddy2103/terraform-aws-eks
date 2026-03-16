@@ -33,7 +33,7 @@ resource "aws_lb_listener" "ingress_alb" {
   }
 }
 
-resource "aws_route53_record" "ingress_alb" {
+ resource "aws_route53_record" "ingress_alb" {
   zone_id = var.zone_id
   name    = "${var.environment}.${var.zone_name}" #dev.bharath2103.site
   type    = "A"
@@ -41,7 +41,7 @@ resource "aws_route53_record" "ingress_alb" {
   alias {
     name                   = module.ingress_alb.dns_name
     zone_id                = module.ingress_alb.zone_id # This is the ZONE ID of ALB
-    evaluate_target_health = true
+    evaluate_target_health = true 
   }
 }
 
