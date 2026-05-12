@@ -35,7 +35,7 @@ resource "aws_lb_listener" "ingress_alb" {
 
  resource "aws_route53_record" "ingress_alb" {
   zone_id = var.zone_id
-  name    = "${var.environment}.${var.zone_name}" #dev.bharath2103.site
+  name    = "${var.environment}.${var.zone_name}" #dev.bharath2103.online
   type    = "A"
 
   alias {
@@ -74,7 +74,7 @@ resource "aws_lb_listener_rule" "frontend" {
 
   condition {
     host_header {
-      values = ["${var.environment}.${var.zone_name}"] # https://dev.daws84s.site
+      values = ["${var.environment}.${var.zone_name}"] # https://dev.daws84s.online
     }
   }
 }

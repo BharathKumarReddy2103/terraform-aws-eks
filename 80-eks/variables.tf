@@ -11,5 +11,5 @@ variable "zone_id" {
 }
 
 variable "zone_name" {
-    default = "bharath2103.site"
+    default = "bharath2103.online"
 }
