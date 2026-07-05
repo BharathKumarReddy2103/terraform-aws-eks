@@ -64,13 +64,13 @@ module "eks" {
         AmazonEKSLoad = "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"
       }
 
-      # taints = {
-      #   upgrade = {
-      #     key = "upgrade"
-      #     value  = "true"
-      #     effect = "NO_SCHEDULE"
-      #   }
-      # }
+      taints = {
+        upgrade = {
+          key = "upgrade"
+          value  = "true"
+          effect = "NO_SCHEDULE"
+        }
+      }
     }
   }
 
